@@ -1,0 +1,15 @@
+:root {
+  --color-background-page: #f4f1ea;
+  --color-background-surface: #ffffff;
+  --color-background-header: #243447;
+  --color-text: #1f2933;
+  --color-text-inverted: #ffffff;
+  --color-accent: #c94f4f;
+  --color-link: #2f6f8f;
+  --color-border: #d8d2c6;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --radius-1: 0.5rem;
+}
