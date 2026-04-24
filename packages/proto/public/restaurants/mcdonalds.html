@@ -2,21 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/reset.css">
 <link rel="stylesheet" href="/styles/tokens.css">
 <link rel="stylesheet" href="/styles/page.css">
+<link rel="stylesheet" href="/styles/layout.css">
 </head>
-<body>
-<h1>
-	<svg class="icon" aria-hidden="true">
-		<use href="/icons/restaurant.svg#icon-burger" />
-	</svg>
-	McDonald's
-</h1>
-<main>
-	<section>
+<body class="page-restaurant">
+<header class="site-header">
+	<div class="site-header__brand">
+		<div class="site-header__appname">
+			<svg class="icon" aria-hidden="true">
+				<use href="/icons/restaurant.svg#icon-utensils" />
+			</svg>
+			<a href="/index.html"><strong>ForkFinder</strong></a>
+		</div>
+		<p class="site-header__page">Restaurant Details</p>
+	</div>
+	<nav class="site-header__nav" aria-label="Primary">
+		<a href="/index.html">Home</a>
+		<a href="/restaurants/mcdonalds.html" aria-current="page">McDonald's</a>
+		<a href="/restaurants/taco-bell.html">Taco Bell</a>
+	</nav>
+	<div class="site-header__user" aria-label="Signed in user">
+		<span class="avatar" aria-hidden="true">AH</span>
+		<span>Anthony</span>
+	</div>
+</header>
+<main class="page-grid">
+	<section class="card span-4">
+		<h1>
+			<svg class="icon" aria-hidden="true">
+				<use href="/icons/restaurant.svg#icon-burger" />
+			</svg>
+			McDonald's
+		</h1>
 		<p>
 			<svg class="icon" aria-hidden="true">
 				<use href="/icons/restaurant.svg#icon-location" />
@@ -26,21 +46,21 @@
 		<p><strong>Cuisine:</strong> American fast food</p>
 		<p><strong>Back:</strong> <a href="../index.html">Restaurants</a></p>
 	</section>
-	<section>
+	<section class="card span-4">
 		<h2>
 			<svg class="icon" aria-hidden="true">
 				<use href="/icons/restaurant.svg#icon-menu" />
 			</svg>
 			Menu
 		</h2>
-		<ul>
+		<ul class="stack-list">
 			<li>Big Mac</li>
 			<li>World Famous Fries</li>
 		</ul>
 	</section>
-	<section>
+	<section class="card span-4">
 		<h2>Customers and Reviews</h2>
-		<ul>
+		<ul class="stack-list">
 			<li>Bob: Fast service and fresh fries.</li>
 		</ul>
 	</section>

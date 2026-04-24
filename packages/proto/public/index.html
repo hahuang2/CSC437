@@ -2,23 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/reset.css">
 <link rel="stylesheet" href="/styles/tokens.css">
 <link rel="stylesheet" href="/styles/page.css">
+<link rel="stylesheet" href="/styles/layout.css">
 </head>
-<body>
-<h1>
-	<svg class="icon" aria-hidden="true">
-		<use href="/icons/restaurant.svg#icon-utensils" />
-	</svg>
-	Restaurants
-</h1>
-<main>
-	<section>
+<body class="page-home">
+<header class="site-header site-header--hero">
+	<div class="site-header__lead">
+		<p class="site-header__eyebrow">Homepage</p>
+		<h1>
+			<svg class="icon" aria-hidden="true">
+				<use href="/icons/restaurant.svg#icon-utensils" />
+			</svg>
+			ForkFinder
+		</h1>
+	</div>
+	<nav class="site-header__nav site-header__nav--hero" aria-label="Primary">
+		<a href="/index.html" aria-current="page">Home</a>
+		<a href="/restaurants/mcdonalds.html">McDonald's</a>
+		<a href="/restaurants/taco-bell.html">Taco Bell</a>
+	</nav>
+</header>
+<main class="page-grid">
+	<section class="card span-12">
+		<h2>Restaurant Directory</h2>
 		<p><strong>Pick a restaurant:</strong></p>
-		<ul>
+		<ul class="stack-list">
 			<li>
 				<svg class="icon" aria-hidden="true">
 					<use href="/icons/restaurant.svg#icon-burger" />
