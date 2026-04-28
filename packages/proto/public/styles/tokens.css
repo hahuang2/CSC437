@@ -19,3 +19,16 @@
   --radius-pill: 999px;
   --max-content-width: 72rem;
 }
+
+body.dark-mode {
+  --color-background-page: #111b2a;
+  --color-background-surface: #1d2a3d;
+  --color-background-header: #0a111d;
+  --color-background-chip: #2f425c;
+  --color-text: #e8edf5;
+  --color-text-inverted: #f6f8fb;
+  --color-accent: #f7a65b;
+  --color-link: #8fceff;
+  --color-border: #3c4e67;
+  --color-sequence-item: rgba(18, 28, 42, 0.88);
+}
